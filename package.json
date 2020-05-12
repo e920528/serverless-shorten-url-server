@@ -1,0 +1,31 @@
+{
+  "name": "serverless-shorten-url-server",
+  "version": "1.0.0",
+  "description": "serverless shorten url koa api-server",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e920528/serverless-shorten-url-server.git"
+  },
+  "author": "Evis Cheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e920528/serverless-shorten-url-server/issues"
+  },
+  "homepage": "https://github.com/e920528/serverless-shorten-url-server#readme",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "serverless-http": "^2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
