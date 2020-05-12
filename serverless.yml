@@ -1,0 +1,15 @@
+service: shorten-url-service
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: us-east-1
+
+functions:
+  shortenUrl:
+    handler: index.handler
+    events:
+      - http: 'GET /{proxy+}'
+plugins:
+  - serverless-offline

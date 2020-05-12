@@ -9,7 +9,7 @@ const router = new Router()
 router.get('/:url_to_be_encoded', async ctx => {
   try {
     const res = await request.get(`https://tinyurl.com/api-create.php?url=${ctx.params.url_to_be_encoded}`)
-    ctx.body = { shortenUrl: res.body }
+    ctx.body = { shortenUrl: res }
   } catch(e) {
     ctx.status = 400
     ctx.body = 'Error'
